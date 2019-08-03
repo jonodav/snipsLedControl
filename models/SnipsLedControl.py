@@ -455,10 +455,10 @@ class SnipsLedControl:
 
 
 	@property
-	def hardwareReference(self) -> dict:
+	def hardwareReference(self):
 		return self._hardwareReference
 
 
 	@property
-	def hardware(self) -> dict:
+	def hardware(self):
 		return self._hardware
