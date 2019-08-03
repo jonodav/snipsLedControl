@@ -21,7 +21,7 @@ from models.LedPattern import LedPattern
 class ProjectAlicePattern(LedPattern):
 
 	def __init__(self, controller):
-		super().__init__(controller)
+		super(ProjectAlicePattern, self).__init__(controller)
 		self._dnd = False
 
 
