@@ -27,17 +27,17 @@ class CustomLedPattern(LedPattern):
 	def wakeup(self, *args):
 		start = self._controller.doa()
 		self.off()
-		self._animator.doubleSidedFilling(color=[255, 255, 255, 15], startAt=start, direction=-1, speed=10)
+		self._animator.doubleSidedFilling(color=[255, 255, 255, 128], startAt=start, direction=-1, speed=25)
 
 	def listen(self, *args):
 		start = self._controller.doa()
-		self._animator.breath(color=[255, 255, 255, 25], minBrightness=2, maxBrightness=25, speed=20)
+		self._animator.breath(color=[255, 255, 255, 128], minBrightness=20, maxBrightness=128, speed=250)
 
 	def think(self, *args):
-		self._animator.rotate(color=[0, 0, 255, 25], speed=20, trail=int(self.numLeds / 3))
+		self._animator.rotate(color=[0, 255, 0, 128], speed=20, trail=int(self.numLeds / 3))
 
 	def speak(self, *args):
-		self._animator.doublePingPong(color=[255, 255, 255, 2], speed=10, backgroundColor=None, startAt=0)
+		self._animator.doublePingPong(color=[255, 255, 255, 128], speed=10)
 
 	def idle(self):
 		self.off()
@@ -62,3 +62,4 @@ class CustomLedPattern(LedPattern):
 		time.sleep(0.1)
 		self._animator.doubleSidedFilling(color=[0, 0, 255, 15], startAt=start, direction=-1, speed=50)
 		time.sleep(0.1)
+		self._animator.doubleSidedFilling(color=[0,0,0,0], startAt=start, direction=-1, speed=50)
