@@ -17,7 +17,7 @@
 
 from models.LedPattern import LedPattern
 
-class CustomLedPattern(LedPattern):
+class Reactive(LedPattern):
 
 	def __init__(self, controller):
 		super(CustomLedPattern, self).__init__(controller)
