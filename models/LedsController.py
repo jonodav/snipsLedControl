@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import queue as Queue
+import Queue
 import threading
 import time
 
