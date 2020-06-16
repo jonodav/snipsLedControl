@@ -1,4 +1,4 @@
-# Modified to work with python 2.7 on the raspberry pi 3 a+
+fiddled with some stuff for python 2.7 on the raspberry pi 3 a+
 
 # SLC - Snips Led Control
 Provides an easy way to control your leds on a Snips install. It is highly customizable and beginner friendly

@@ -34,10 +34,10 @@ class CustomLedPattern(LedPattern):
 		self._animator.breath(color=[255, 255, 255, 128], minBrightness=20, maxBrightness=128, speed=250)
 
 	def think(self, *args):
-		self._animator.rotate(color=[0, 255, 0, 128], speed=20, trail=int(self.numLeds / 3))
+		self._animator.rotate(color=[255, 255, 255, 128], speed=20, trail=int(self.numLeds / 4))
 
 	def speak(self, *args):
-		self._animator.doublePingPong(color=[255, 255, 255, 128], speed=10)
+		self._animator.breath(color=[255, 255, 255, 128], minBrightness=20, maxBrightness=128, speed=250)
 
 	def idle(self):
 		self.off()
